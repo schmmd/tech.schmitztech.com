@@ -1,0 +1,36 @@
+---
+layout: droplets
+title: Schmitz Tech
+---
+
+<ul>
+  {% for post in site.posts %}
+    <article class="published">
+      <div class="row">
+        <div class="one-quarter meta">
+          <div class="thumbnail">
+            <img src="./cache/schmmd.jpg" alt="{{ post.title }}" />
+          </div>
+
+          <ul>
+            <li>Written by {{ post.author }}</li>
+            <li>{{post.date|date:"%-d %B %Y"}}</li>
+            <li>About {{ post.categories | category_links }}</li>
+            <li></li>
+          </ul>
+      </div>
+
+      <div class="three-quarters post">
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+
+        <p>When I first moved into my present position, projects were compiled with</p>
+
+        <ul class="actions">
+          <li><a class="button" href="http://www.schmitztech.com:80/tech2/maven2sbt">Continue Reading</a></li>
+        </ul>
+      </div>
+    </div>
+  </article>
+  {% endfor %}
+</ul>
+</article>

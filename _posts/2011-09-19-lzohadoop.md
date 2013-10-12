@@ -1,4 +1,5 @@
 ---
+layout: post
 title: LZO compression in Hadoop
 author: Michael Schmitz
 category: Hadoop

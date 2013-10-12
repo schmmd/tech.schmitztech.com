@@ -23,10 +23,10 @@ title: Schmitz Tech
       <div class="three-quarters post">
         <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 
-        <p>When I first moved into my present position, projects were compiled with</p>
+        <p>{{ post.content | strip_html | truncatewords:20}}</p>
 
         <ul class="actions">
-          <li><a class="button" href="http://www.schmitztech.com:80/tech2/maven2sbt">Continue Reading</a></li>
+          <li><a class="button" href="{{baseurl}}{{post.url}}">Continue Reading</a></li>
         </ul>
       </div>
     </div>

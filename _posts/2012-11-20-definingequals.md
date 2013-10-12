@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Defining equals effectively
 author: Michael Schmitz
 category: Scala

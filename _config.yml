@@ -1,3 +1,7 @@
 baseurl:  
 
 permalink: none
+
+pygments: true
+
+markdown: redcarpet

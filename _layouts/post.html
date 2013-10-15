@@ -1,6 +1,5 @@
 ---
 layout: droplets
-title: Schmitz Tech
 ---
 
 <article class="single published">
@@ -11,14 +10,15 @@ title: Schmitz Tech
             </div>
 
             <ul>
-                <li>Written by  Michael Schmitz</li>
-                <li>April 29th, 2013</li>
-                <li>About <a href="http://www.schmitztech.com:80/tech2/category/scala"> Scala</a></li>
+                <li>Written by {{ page.author }}</li>
+                <li>{{post.date|date:"%-d %B %Y"}}</li>
+                <li>{{ page.categories | category_links }}</li>
                 <li></li>
             </ul>
         </div>
 
         <div class="three-quarters post">
+        <h2>{{ page.title }}</h2>
         {{ content }}
         </div>
     </div>
